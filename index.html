@@ -32,15 +32,33 @@
     color: #444;
   }
   a { color: #0366d6; text-decoration: none; }
+
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 6px;
+  }
+
+  nav a:hover {
+    color: #000;
+  }
+
+  nav a.active {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+
 </style>
 </head>
 
 <body>
 
-<nav style="margin-bottom: 40px; padding-bottom: 16px; border-bottom: 1px solid #eee;">
-  <a href="index.html" style="margin-right: 20px; font-weight: 600;">Home</a>
-  <a href="gofileroom.html" style="margin-right: 20px;">GoFileRoom</a>
-  <a href="api-platform.html" style="margin-right: 20px;">API & Platform</a>
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="gofileroom.html">GoFileRoom</a>
+  <a href="api-platform.html">API & Platform</a>
   <a href="product-leadership.html">Product Leadership</a>
 </nav>
   
