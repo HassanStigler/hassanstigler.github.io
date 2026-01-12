@@ -15,8 +15,9 @@ body {
   color: #111;
 }
 
+/* Navigation */
 nav {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 nav a {
@@ -36,6 +37,7 @@ nav a.active {
   border-bottom: 2px solid #000;
 }
 
+/* Typography */
 h1, h2, p, ul {
   margin-top: 0;
   margin-bottom: 1em;
@@ -52,6 +54,10 @@ h1 {
   margin-bottom: 1.4em;
 }
 
+ul {
+  margin-left: 1.2em;
+}
+
 .footer {
   margin-top: 3em;
   padding-top: 1.5em;
@@ -59,9 +65,26 @@ h1 {
   color: #444;
 }
 
+/* Links */
 a {
   color: #0366d6;
   text-decoration: none;
+}
+
+/* Hero (photo + name) */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.profile-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
 }
 </style>
 </head>
@@ -75,10 +98,19 @@ a {
   <a href="product-leadership.html">Product Leadership</a>
 </nav>
 
-<section style="margin-bottom: 48px; padding-bottom: 36px; border-bottom: 1px solid #eee;">
+<div class="hero">
+  <img 
+    src="2024November-105.jpg" 
+    alt="Hassan Stigler, Senior Product Leader" 
+    class="profile-photo"
+  />
+  <div>
+    <h1>Hassan Stigler</h1>
+    <div class="tagline">Platform & Product Leader</div>
+  </div>
+</div>
 
-  <h1>Hassan Stigler</h1>
-  <div class="tagline">Platform & Product Leader</div>
+<section style="margin-bottom: 48px; padding-bottom: 36px; border-bottom: 1px solid #eee;">
 
   <p style="font-size: 1.15em;">
     I run revenue-critical SaaS platforms through modernization, scale, and growth.
