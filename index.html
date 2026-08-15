@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Hassan Stigler — Platform & Product Leader</title>
+<title>Hassan Stigler — Senior Product & Platform Leader</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <style>
@@ -17,7 +17,7 @@ body {
 
 /* Navigation */
 nav {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 nav a {
@@ -44,39 +44,32 @@ h1, h2, p, ul {
 }
 
 h1 {
-  font-size: 2.4em;
-  margin-bottom: 0.2em;
+  font-size: 2.5em;
+  margin-bottom: 0.15em;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.35em;
+  margin-bottom: 0.8em;
 }
 
 .tagline {
   font-size: 1.1em;
   color: #555;
-  margin-bottom: 1.4em;
+  margin-bottom: 0;
 }
 
 ul {
   margin-left: 1.2em;
 }
 
-.footer {
-  margin-top: 3em;
-  padding-top: 1.5em;
-  border-top: 1px solid #eee;
-  color: #444;
-}
-
-/* Links */
-a {
-  color: #0366d6;
-  text-decoration: none;
-}
-
-/* Hero (photo + name) */
+/* Hero */
 .hero {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .profile-photo {
@@ -85,6 +78,84 @@ a {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #eee;
+}
+
+/* Sections */
+section {
+  margin-bottom: 42px;
+}
+
+.section-divider {
+  padding-bottom: 36px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Impact Grid */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 24px 0 10px;
+}
+
+.impact-item {
+  border: 1px solid #eee;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+.impact-number {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.impact-label {
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Links */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid #eee;
+  color: #444;
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  body {
+    padding: 24px 18px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  .hero {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
@@ -106,36 +177,153 @@ a {
   />
   <div>
     <h1>Hassan Stigler</h1>
-    <div class="tagline">Platform & Product Leader</div>
+    <div class="tagline">
+      Senior Product Leader | Enterprise SaaS | Platforms & APIs
+    </div>
   </div>
 </div>
 
-<section style="margin-bottom: 48px; padding-bottom: 36px; border-bottom: 1px solid #eee;">
+<section class="section-divider">
 
   <p style="font-size: 1.15em;">
-    I run revenue-critical SaaS platforms through modernization, scale, and growth.
-    I led GoFileRoom — a $40M+ enterprise document platform at Thomson Reuters —
-    through API enablement, security modernization, and customer trust recovery,
-    driving revenue from <strong>$38M → $43M</strong> while restoring pNPS from <strong>–15 → +3</strong>.
+    I build and lead products that sit at the intersection of technology,
+    customers, and business growth. With <strong>19 years of technology
+    experience</strong> and senior product leadership experience in enterprise
+    SaaS, I specialize in modernizing established platforms, creating scalable
+    product capabilities, and turning complex technical challenges into
+    measurable business outcomes.
   </p>
 
-  <p><strong>What I’m known for</strong></p>
+  <p>
+    Most recently, I led product strategy for <strong>GoFileRoom</strong>,
+    a $40M+ enterprise document management platform at Thomson Reuters
+    supporting more than <strong>1,400 accounting firms</strong>.
+  </p>
+
+</section>
+
+<section class="section-divider">
+
+  <h2>Selected Impact</h2>
+
+  <div class="impact-grid">
+
+    <div class="impact-item">
+      <span class="impact-number">$38M → $43M</span>
+      <span class="impact-label">GoFileRoom revenue growth</span>
+    </div>
+
+    <div class="impact-item">
+      <span class="impact-number">–15 → +3</span>
+      <span class="impact-label">pNPS turnaround</span>
+    </div>
+
+    <div class="impact-item">
+      <span class="impact-number">1,400+</span>
+      <span class="impact-label">Enterprise accounting firms</span>
+    </div>
+
+  </div>
+
   <ul>
-    <li>Turning trusted but under-invested products into modern, scalable platforms</li>
-    <li>Aligning engineering, security, support, and customers around a single roadmap</li>
-    <li>Using APIs, identity, and telemetry to create leverage and reduce operational drag</li>
+    <li>Led platform modernization across APIs, identity, security, telemetry, and core product capabilities</li>
+    <li>Launched webhook capabilities, API documentation, and developer-facing platform resources</li>
+    <li>Helped enterprise customers replace more than <strong>3 FTEs</strong> through API-driven automation</li>
+    <li>Partnered across engineering, security, support, sales, and customers to establish a credible product roadmap</li>
+    <li>Supported SOC 2 readiness and CIAM modernization while balancing security, customer experience, and delivery</li>
   </ul>
 
-  <p><strong>What that looks like in practice</strong></p>
+</section>
+
+<section class="section-divider">
+
+  <h2>What I Do Best</h2>
+
   <ul>
-    <li>Enterprise customers replaced <strong>3+ FTEs</strong> with GoFileRoom APIs</li>
-    <li>Leadership reinvested once the platform had visibility, trust, and a credible future</li>
-    <li>Support shifted from firefighting to data-driven operations</li>
+    <li>
+      <strong>Platform Strategy:</strong>
+      Turning established products into scalable platforms with a clear technical
+      and commercial direction.
+    </li>
+
+    <li>
+      <strong>Product Leadership:</strong>
+      Connecting customer problems, business priorities, and engineering
+      capabilities into focused roadmaps.
+    </li>
+
+    <li>
+      <strong>APIs & Developer Platforms:</strong>
+      Creating product capabilities that allow customers and partners to
+      integrate, automate, and build on top of core systems.
+    </li>
+
+    <li>
+      <strong>Enterprise SaaS:</strong>
+      Managing products where reliability, security, adoption, and customer
+      trust are as important as new feature delivery.
+    </li>
+
+    <li>
+      <strong>Modernization:</strong>
+      Leading change in mature products without losing sight of existing
+      customers, revenue, or operational realities.
+    </li>
+
+    <li>
+      <strong>AI & Emerging Technology:</strong>
+      Applying AI-assisted development, analysis, research, and automation
+      to accelerate product discovery and execution.
+    </li>
   </ul>
 
-  <p style="margin-top: 20px;">
-    → <a href="gofileroom.html">See how I did this with GoFileRoom</a><br>
-    → <a href="product-leadership.html">See how I run roadmaps & teams</a>
+</section>
+
+<section class="section-divider">
+
+  <h2>How I Lead</h2>
+
+  <p>
+    I believe strong product leadership is about creating clarity. That means
+    understanding the customer problem, making the business case, giving
+    engineering the context to make good technical decisions, and creating
+    enough alignment that teams can move with confidence.
+  </p>
+
+  <p>
+    I am particularly effective in environments where a product has significant
+    customer value but needs modernization, stronger product strategy, better
+    platform capabilities, or renewed investment.
+  </p>
+
+  <p>
+    My approach combines product strategy with enough technical depth to work
+    effectively across APIs, cloud platforms, data, identity, security,
+    observability, and enterprise architecture.
+  </p>
+
+</section>
+
+<section>
+
+  <h2>Explore My Work</h2>
+
+  <p>
+    → <a href="gofileroom.html"><strong>GoFileRoom Case Study</strong></a><br>
+    How I helped lead the modernization and growth of a revenue-critical
+    enterprise SaaS platform.
+  </p>
+
+  <p>
+    → <a href="api-platform.html"><strong>API & Platform Work</strong></a><br>
+    How APIs, developer capabilities, identity, and platform strategy created
+    leverage for customers and the business.
+  </p>
+
+  <p>
+    → <a href="product-leadership.html"><strong>Product Leadership</strong></a><br>
+    How I approach product strategy, roadmaps, cross-functional leadership,
+    and execution.
   </p>
 
 </section>
